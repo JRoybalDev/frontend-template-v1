@@ -1,0 +1,16 @@
+{
+  "name": "frontend-template-v1",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter web dev",
+    "dev:web": "bun run --filter web dev",
+    "dev:api": "bun run --filter api dev",
+    "build": "bun run --filter web build",
+    "build:api": "bun run --filter api build",
+    "lint": "bun run --filter '*' lint"
+  }
+}
